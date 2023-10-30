@@ -63,15 +63,21 @@
 
                     <div class="post-list-entry">
                         <p>Contact us to learn more!</p>
-                        <!-- Check 213: Input element, type of text, has no text in label-->
+                        <!-- Check #213: Input element, type of text, has no text in label-->
+                        <!-- Check #188: Label text is empty-->
                         <form action="/" method="post">
+
+                            <!-- LABEL FOR FULL NAME-->
                             <label for="fullname">Name <div class="mandatory">*</div> </label>
-                            <input type="text" name="fullname" required />
-                            <required aria-required="true" placeholder="Type your Full Name"/>
+                            <input type="text" name="fullname" required
+                            aria-required="true" placeholder="Type your Full Name"/>
 
-                            <label>Email</label>
-                            <input type="email" name="email" required />
+                            <!-- LABEL FOR EMAIL-->
+                            <label for="email">Email</label> <div class="mandatory">*</div> </label>
+                            <input type="email" name="email" required 
+                            aria-required="true" placeholder="Type Email Address"required />
 
+                            <!---->
                             <div class="flexbox">
                                 <span></span>
                                 <label class="check">Check Me (required)</label>
