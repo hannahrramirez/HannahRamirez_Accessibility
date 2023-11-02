@@ -36,9 +36,7 @@
             </nav>
 
             <div class="top-logo">
-                
-                <!-- Check #0: Add "ALT" attribute-->
-                <a href="/"><img src="assets/images/site-logo.png" alt="Dreamla logo" /></a>
+                <a href="/"><img src="/assets/images/site-logo.png" alt="Dreamla Logo"/></a>
             </div>
         </div>  
     </header>
@@ -47,46 +45,46 @@
         <div class="container">
             <article>
                 <div class="image-part">
-                    
-                    <!-- Check #174: Anchor contains text-->
-                    <a href="Top Places You Should Visit Right Now"></a>
-
-                        <!-- Check #1: Img element missing alt atrribute-->
-                        <img width="960" height="750" src="assets/images/top-places-you-should-visit-right-now.jpg" alt="Top places you should visit" />  
+                    <a href="">
+                        <img width="960" height="750" src="/assets/images/top-places-you-should-visit-right-now.jpg" alt="Travel Scenery Image"/>  
                     </a>
                 </div>
 
                 <div class="content-part">
                     <div class="post-header">
                         <h3 class="post-title">
-                            <a href="">Top Places You Should Visit Right Now</a>
+                            <a href="Top Places You Should Visit Right Now">Top Places You Should Visit Right Now</a>
                         </h3>
                     </div>
 
                     <div class="post-list-entry">
                         <p>Contact us to learn more!</p>
-                        <!-- Check #213: Input element, type of text, has no text in label-->
-                        <!-- Check #188: Label text is empty-->
                         <form action="/" method="post">
 
-                            <!-- INPUT ELEMENT & LABEL FOR FULL NAME-->
-                            <label for="fullname">Name <div class="mandatory">*</div> </label>
-                            <input type="text" name="fullname" required
-                            aria-required="true" placeholder="Type your Full Name"/>
+                            <fieldset>
+                                <legend>Fields marked with an <div class="mandatory">*</div> are required</legend>
 
-                            <!-- INPUT ELEMENT & LABEL FOR EMAIL-->
-                            <label for="email">Email <div class="mandatory">*</div> </label> 
-                            <input type="email" name="email" required 
-                            aria-required="true" placeholder="Type Email Address"required />
+                                <!-- LABEL FOR FULLNAME -->
+                                <label for="fullname">Name <div class="mandatory">*</div> </label>
+                                <input type="text" id="fullname" type="text" name="fullname"
+                                required aria-required="true" placeholder="Type your Full Name"/>
+                                
+                                <!-- LABEL FOR EMAIL -->
+                                <label for="email">Email <div class="mandatory">*</div> </label>
+                                <input type="text" id="email" type="email" name="email"
+                                aria-required="true" placeholder="Type Email Address"required />
 
-                            <!-- LABEL FOR CHECKBOX ROLE USING ARIA-->
-                            <div class="flexbox">
-                                <span id="check" role="checkbox" ariarequired="true"
-                                aria-checked="false"></span>
-                                <label for="check">Check Me (required)</label>
-                            </div>
-                        
-                            <input type="submit" value="Submit" />
+                                <!-- CHECKBOX ROLE USING ARIA -->
+                                <div class="flexbox">
+                                    <span id="check" role="checkbox" ariarequired="true"
+                                    aria-checked="false"></span>
+
+                                    <label for="check" class="check">Check Me (required)</label>
+                                </div>
+
+                                <input type="submit" value="Submit" />
+
+                            </fieldset>
                         </form>
                     </div>
                 </div>
